@@ -1,97 +1,4 @@
 <?php
-// // name space in oop ==> benifit ==> code//
-
-// namespace MyApp\Models;
-
-
-// class User {
-//     public $name;
-
-//     function __construct($name) {
-//         $this->name = $name;
-//     }
-
-//     function greet() {
-//         return "Hello, " . $this->name;
-//     }
-// }
-
-
-// namespace MyApp\Controllers;
-
-// use MyApp\Models\User;
-
-// $user = new User("Ahmed");
-// echo $user->greet();
-
-
-// echo "<h1 style='text-align: center;'>Hello</h1>";
-
-//__set(),__get(),__call()  ==> withcode//
-//__set()//
-
-// class User {
-//     private $data = [];
-
-  
-//     public function __set($name, $value) {
-//         $this->data[$name] = $value;
-//     }
-
-  
-//     public function getData() {
-//         return $this->data;
-//     }
-// }
-
-// $user = new User();
-// $user->name = "Ahmed"; 
-// $user->age = 25; 
-
-// print_r($user->getData()); 
-
-
-
-
-//__get()//
-
-
-// class User {
-//     private $data = [
-//         'name' => 'Ahmed',
-//         'age' => 25
-//     ];
-
-//     public function __get($name) {
-//         if (isset($this->data[$name])) {
-//             return $this->data[$name];
-//         }
-//         return null;
-//     }
-// }
-
-// $user = new User();
-// echo $user->name; 
-// echo $user->age;  
-// echo $user->email;
-
-
-
-
-//__call()//
-
-// class User {
-    
-//     function __call($method, $arguments) {
-//         echo " $method : " . implode(", ", $arguments);
-//     }
-// }
-
-// $user = new User();
-// $user->sayHello("Hello", "World"); 
-
-
-
 // class Author {
 //     private $name;
 //     private $email;
@@ -534,4 +441,98 @@
 
 
 
-?>
+//*********************** */
+
+// // name space in oop ==> benifit ==> code//
+
+// namespace MyApp\Models;
+
+
+// class User {
+//     public $name;
+
+//     function __construct($name) {
+//         $this->name = $name;
+//     }
+
+//     function greet() {
+//         return "Hello, " . $this->name;
+//     }
+// }
+
+
+// namespace MyApp\Controllers;
+
+// use MyApp\Models\User;
+
+// $user = new User("Ahmed");
+// echo $user->greet();
+
+
+// echo "<h1 style='text-align: center;'>Hello</h1>";
+
+//__set(),__get(),__call()  ==> withcode//
+//__set()//
+
+// class User {
+//     private $data = [];
+
+  
+//      function __set($name, $value) {
+//         $this->data[$name] = $value;
+//     }
+
+  
+//      function getData() {
+//         return $this->data;
+//     }
+// }
+
+// $user = new User();
+// $user->name = "Ahmed"; 
+// $user->age = 25; 
+
+// print_r($user->getData()); 
+
+
+
+
+//__get()//
+
+
+// class User {
+//     private $data = [
+//         'name' => 'Ahmed',
+//         'age' => 25
+//     ];
+
+//      function __get($name) {
+//         if (isset($this->data[$name])) {
+//             return $this->data[$name];
+//         }
+//         return null;
+//     }
+// }
+
+// $user = new User();
+// echo $user->name; 
+// echo $user->age;  
+// echo $user->email;
+
+
+
+
+//__call()//
+
+// class User {
+    
+//     function __call($method, $arguments) {
+//         echo " $method : " . implode(", ", $arguments);
+//     }
+// }
+
+// $user = new User();
+// $user->sayHello("Hello", "World"); 
+
+
+// ?>
